@@ -24,6 +24,9 @@ export default defineConfig({
           Host: 'login.sina.com.cn',
           Referer: 'https://weibo.com/'
         },
+        cookieDomainRewrite: {
+          "*": ""
+        }
       },
       '/wbsso': {
         target: 'https://passport.weibo.com/wbsso',
@@ -33,6 +36,9 @@ export default defineConfig({
           Host: 'login.sina.com.cn',
           Referer: 'https://weibo.com/'
         },
+        cookieDomainRewrite: {
+          "*": ""
+        }
       }
     }
   }

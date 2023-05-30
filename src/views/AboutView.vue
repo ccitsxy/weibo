@@ -24,3 +24,4 @@ const authcode = ref('')
     </n-form>
     <n-button type="primary" block strong> 登录 </n-button>
   </div>
+</template>

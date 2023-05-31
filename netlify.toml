@@ -6,13 +6,13 @@
   command = "pnpm run build"
 
 [[redirects]]
-  from = "/sso"
+  from = "/sso/*"
   to = "https://login.sina.com.cn/sso"
   status = 200
   headers = { Host = "login.sina.com.cn", Referer = "https://weibo.com/" }
 
 [[redirects]]
-  from = "/wbsso"
+  from = "/wbsso/*"
   to = "https://passport.weibo.com/wbsso"
   status = 200
   headers = { Host = "login.sina.com.cn", Referer = "https://weibo.com/" }

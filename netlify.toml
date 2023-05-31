@@ -6,11 +6,6 @@ publish = "dist"
 command = "pnpm run build"
 
 [[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
-
-[[redirects]]
 from = "/sso"
 to = "https://login.sina.com.cn/sso"
 status = 200

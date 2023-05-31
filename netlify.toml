@@ -1,11 +1,23 @@
 [build.environment]
-NODE_VERSION = "18"
+  NODE_VERSION = "18"
 
 [build]
-publish = "dist"
-command = "pnpm run build"
+  publish = "dist"
+  command = "pnpm run build"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[redirects]]
+  from = "/sso"
+  to = "https://login.sina.com.cn/sso"
+  status = 200
+  headers = { Host = "login.sina.com.cn", Referer = "https://weibo.com/" }
+
+[[redirects]]
+  from = "/wbsso"
+  to = "https://passport.weibo.com/wbsso"
+  status = 200
+  headers = { Host = "login.sina.com.cn", Referer = "https://weibo.com/" }

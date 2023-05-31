@@ -7,14 +7,14 @@
 
 [[redirects]]
   from = "/sso/*"
-  to = "https://login.sina.com.cn/sso"
+  to = "https://login.sina.com.cn/sso/:splat"
   status = 200
   force = true
   headers = { Host = "login.sina.com.cn", Referer = "https://weibo.com/" }
 
 [[redirects]]
   from = "/wbsso/*"
-  to = "https://passport.weibo.com/wbsso"
+  to = "https://passport.weibo.com/wbsso/:splat"
   status = 200
   force = true
   headers = { Host = "login.sina.com.cn", Referer = "https://weibo.com/" }
